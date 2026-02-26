@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davi Kampot Resort</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <script src="../public/js/animations.js"></script>
+    <link rel="icon" type="image/png" sizes="36x36" href="../public/assets/images/Logo/Devi_kampot_logo.jpg">
+    <style>
+        #main-view { transition: opacity 0.5s ease-in-out; }
+        .thumb-item { transition: all 0.3s ease; }
+        .text-outline { -webkit-text-stroke: 2px #0f172a; }
+        body{
+          font-family: "Battambang", system-ui;
+          font-weight: 100;
+          font-style: normal;
+        };
+        #container-placeholder{
+          font-family: "Battambang", system-ui;
+          font-weight: 100;
+          font-style: normal; 
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-slate-900 font-sans">
+
+    <div id="navbar-placeholder"></div>
+
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="../public/assets/images/Logo/main.jpg" 
+                 class="w-full h-full object-cover brightness-50" alt="Kampot View">
+        </div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-6xl md:text-8xl font-black text-white tracking-tighter mb-4 drop-shadow-lg">
+                DAVI <span class="text-emerald-400">KAMPOT</span>
+            </h1>
+            <p class="text-xl text-stone-200 mb-8 max-w-lg mx-auto uppercase tracking-widest">
+                Luxury Container Living & Riverside Serenity
+            </p>
+            <button class="bg-emerald-500 hover:bg-emerald-600 text-white px-10 py-4 rounded-full font-bold transition-all transform hover:scale-105 shadow-xl">
+                BOOK YOUR ESCAPE
+            </button>
+        </div>
+    </header>
+
+
+
+    
+
+    <div id="container-placeholder"></div>
+    <!-- <section id="services-list" class="py-24 bg-white overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6">
+          
+          <div class="flex flex-col md:flex-row items-center gap-12 md:gap-24 mb-32 group">
+              <div class="md:w-1/2 overflow-hidden rounded-sm shadow-2xl">
+                  <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&q=80" 
+                      alt="Villa" class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700">
+              </div>
+              <div class="md:w-1/2">
+                  <span class="text-emerald-500 font-mono font-bold tracking-widest uppercase block mb-4">01. Premium Stay</span>
+                  <h3 class="text-5xl font-black text-slate-900 uppercase mb-6 leading-tight">THE LUXURY <br>CONTAINER VILLA</h3>
+                  <p class="text-slate-600 text-lg leading-relaxed mb-8">
+                      Our flagship villa is a masterclass in industrial design. Composed of high-grade shipping containers, it features a panoramic view of the Kampot river, a private infinity deck, and a minimalist interior that redefines modern luxury.
+                  </p>
+                  <a href="#" class="inline-flex items-center gap-3 font-bold uppercase tracking-widest text-sm group/link">
+                      Explore Villa 
+                      <i class="fa-solid fa-arrow-right group-hover/link:translate-x-2 transition-transform"></i>
+                  </a>
+              </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row-reverse items-center gap-12 md:gap-24 mb-32 group">
+              <div class="md:w-1/2 overflow-hidden rounded-sm shadow-2xl">
+                  <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80" 
+                      alt="Tree House" class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700">
+              </div>
+              <div class="md:w-1/2 text-right md:text-left">
+                  <span class="text-orange-500 font-mono font-bold tracking-widest uppercase block mb-4">02. Nature High</span>
+                  <h3 class="text-5xl font-black text-slate-900 uppercase mb-6 leading-tight">ELEVATED <br>TREE HOUSE</h3>
+                  <p class="text-slate-600 text-lg leading-relaxed mb-8">
+                      Sleep among the canopy. Our elevated container suites are perched high above the jungle floor, offering a secluded nest for those looking to disconnect and breathe in the fresh Kampot air.
+                  </p>
+                  <a href="#" class="inline-flex items-center gap-3 font-bold uppercase tracking-widest text-sm group/link">
+                      Explore Tree House 
+                      <i class="fa-solid fa-arrow-right group-hover/link:translate-x-2 transition-transform"></i>
+                  </a>
+              </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-center gap-12 md:gap-24 group">
+              <div class="md:w-1/2 overflow-hidden rounded-sm shadow-2xl">
+                  <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80" 
+                      alt="Sky Bar" class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700">
+              </div>
+              <div class="md:w-1/2">
+                  <span class="text-blue-500 font-mono font-bold tracking-widest uppercase block mb-4">03. Social Space</span>
+                  <h3 class="text-5xl font-black text-slate-900 uppercase mb-6 leading-tight">SKY BAR <br>& RESTAURANT</h3>
+                  <p class="text-slate-600 text-lg leading-relaxed mb-8">
+                      Savor the world-famous Kampot pepper in our signature dishes. Our open-air container bar serves craft cocktails with the best sunset views in the province.
+                  </p>
+                  <a href="#" class="inline-flex items-center gap-3 font-bold uppercase tracking-widest text-sm group/link">
+                      View Menu 
+                      <i class="fa-solid fa-arrow-right group-hover/link:translate-x-2 transition-transform"></i>
+                  </a>
+              </div>
+          </div>
+
+      </div>
+    </section> -->
+
+    <div id="footer-placeholder"></div>
+    <script src="../public/js/animations.js"></script>
+    <script>
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                });
+        }
+
+        // Call the loader
+        loadComponent('navbar-placeholder', 'nav.html');
+        loadComponent('footer-placeholder', 'footer.html');
+        loadComponent('container-placeholder', 'container.html');
+    </script>
+    
+</body>
+</html>

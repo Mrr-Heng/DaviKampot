@@ -1,0 +1,45 @@
+<nav class="fixed w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+            <!-- <div class="w-20 h-20 bg-emerald-500 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg"><img src="../public/assets/images/Logo/Devi_kampot_logo.jpg" alt=""></div> -->
+            <span class="text-[16px] font-black tracking-tighter text-slate-800">DAVI <span class="text-emerald-500 italic">KAMPOT</span></span>
+        </div>
+
+        <div class="hidden md:flex space-x-8 font-medium text-slate-600 uppercase text-sm tracking-widest">
+            <a href="index.html" class="hover:text-emerald-500 transition-colors border-b-2 border-emerald-500">Home</a>
+            <div class="group relative flex items-center">
+                <button class="flex items-center hover:text-emerald-500 transition-colors gap-1 uppercase">
+                    Service
+                    <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i>
+                </button>
+                <div class="absolute top-[100%] left-0 w-56 bg-white shadow-xl rounded-b-xl border border-stone-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top scale-95 group-hover:scale-100 py-4">
+                    <a href="#" class="block px-6 py-2 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 transition-colors capitalize">Villa</a>
+                    <a href="#" class="block px-6 py-2 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 transition-colors capitalize">Bungalows</a>
+                    <a href="#" class="block px-6 py-2 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 transition-colors capitalize">Tree House</a>
+                    <a href="#" class="block px-6 py-2 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 transition-colors capitalize">Spa</a>
+                    <a href="#" class="block px-6 py-2 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 transition-colors capitalize">Playground</a>
+                </div>
+            </div>
+            <a href="#" class="hover:text-emerald-500 transition-colors">Activities</a>
+            <a href="#" class="hover:text-emerald-500 transition-colors">About</a>
+            <a href="#" class="hover:text-emerald-500 transition-colors">Contact</a>
+        </div>
+
+        <div class="md:hidden text-[16px] text-slate-800 cursor-pointer" id="mobile-menu-button">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200">
+        <div class="px-6 pt-2 pb-6 space-y-2 flex flex-col font-medium text-slate-600 uppercase text-sm tracking-widest">
+            <a href="index.html" class="py-3 border-b border-stone-100 text-emerald-500">Home</a>
+            <a href="#" class="py-3 border-b border-stone-100">Villa</a>
+            <a href="#" class="py-3 border-b border-stone-100">Bungalows</a>
+            <a href="#" class="py-3 border-b border-stone-100">Spa</a>
+            <a href="#" class="py-3 border-b border-stone-100">Activities</a>
+            <a href="#" class="py-3 border-b border-stone-100">About</a>
+            <a href="#" class="py-3 border-b border-stone-100">Contact</a>
+        </div>
+    </div>
+</nav>
+<script src="../public/js/animations.js"></script>

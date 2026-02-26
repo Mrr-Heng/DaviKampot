@@ -1,0 +1,74 @@
+/* DAVI KAMPOT - Custom Styles */
+
+/* 1. Smooth Scroll Base (Required for Lenis) */
+html.lenis {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+/* 2. Scroll Reveal Animations */
+.reveal-hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform, opacity;
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 3. Custom Modern Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f5f5f4; /* stone-100 */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #10b981; /* emerald-500 */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #059669; /* emerald-600 */
+}
+
+/* 4. Navigation & Dropdown Polish */
+nav {
+    transition: all 0.4s ease-in-out;
+}
+
+/* Glassmorphism for the dropdown menu */
+.group:hover .absolute {
+    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Hero Text Shine Animation */
+@keyframes textShine {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.hero-gradient-text {
+    background: linear-gradient(to right, #fff 20%, #34d399 50%, #fff 80%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    animation: textShine 4s linear infinite;
+}
